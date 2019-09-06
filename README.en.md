@@ -12,7 +12,6 @@
 Replaying recorded MySQL requests to a test environment database
 
 ## Recording Method
-该工具读取tcpdump的产物，因此需要使用tcpdump进行流量录制，命令如下：
 The tool reads the output of tcpdump, so you need to use tcpdump for traffic recording, as follows:
 ```sh
 tcpdump -s 0 -i eth0 dst port 4000 and tcp -w /run/test.pcap
